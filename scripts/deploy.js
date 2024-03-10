@@ -2,7 +2,10 @@ const hre = require("hardhat");
 
 async function main() {
   // Get the Points smart contract
-  const Degen = await hre.ethers.getContractFactory("DegenToken");
+  const Degen = await hre.ethers.getContractFactory(
+    "DegenToken",
+    ["Degen"],["DGN"]
+  );
 
   // Deploy it
   const degen = await Degen.deploy();
@@ -18,3 +21,4 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+//0x430105F2D1B6d183dF0722BEF52aB7F63aFFEc5D

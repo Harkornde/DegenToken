@@ -104,11 +104,11 @@ contract Points is ERC20, Ownable {
 That would be it for the smart contract side, now we need to configure Hardhat to work with the Avalanche C-Chain.
 
 ## Configuration
-To configure Harhat to work with Avalanche by default, the first step is to add Avalanche to its supported chains. For initial testing purposes, we will be using Avalanche's Fuji test network, which is a C-Chain test network that allows us to test our smart contracts. Once everything is thoroughly tested and working as expected, we can then proceed by deploying it to Avalanche's Mainnet.
+To configure Hardhat to work with Avalanche by default, the first step is to add Avalanche to its supported chains. For initial testing purposes, we will be using Avalanche's Fuji test network, which is a C-Chain test network that allows us to test our smart contracts. Once everything is thoroughly tested and working as expected, we can then proceed by deploying it to Avalanche's Mainnet.
 
 To accomplish this, we need to follow the steps below.
 
-We need to add Avalanche as a supported network in Harhat's configuration. This can be done by modifying the configuration file to include the necessary parameters for Avalanche.
+We need to add Avalanche as a supported network in Hardhat's configuration. This can be done by modifying the configuration file to include the necessary parameters for Avalanche.
 
 When using the hardhat network, you may choose to fork Fuji or Avalanche Mainnet, this will allow you to debug contracts using the hardhat network while keeping the current network state. To enable forking, turn one of these booleans on, and then run your tasks/scripts using `--network hardhat`
 
@@ -227,7 +227,7 @@ module.exports = {
 ## Verify
 One additional step is to verify the deployed smart contract, [to do this we need an API Key from Snowtrace, you need to provide an email address to complete this step, but is straightforward](https://snowtrace.io/register).
 
-Once you have your account set up, you can go to [your API Keys section](https://snowtrace.io/myapikey) and create a key from there.
+Once you have your account set up, you can go to [your API Keys section](https://snowtrace.io/myaclraepikey) and create a key from there.
 
 Once you have your new API key, we can paste it into our Harhat config file, like so:
 
