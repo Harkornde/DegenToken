@@ -21,20 +21,20 @@ contract DegenToken is ERC20, Ownable{
         _;
     }
 
-    function mintDegen(address _player, uint256 _amount) public onlyOwners  {
+    function mintDegenToken(address _player, uint256 _amount) public onlyOwners  {
         _mint(_player, _amount);
     }
 
-    function burnDegen(uint256 amount) public hasTokens(amount) {
+    function burnDegenToken(uint256 amount) public hasTokens(amount) {
         _burn(msg.sender, amount);
     }
 
-    function transferDegen(address to, uint256 amount) public hasTokens(amount)  returns (bool) {
+    function transferDegenToken(address to, uint256 amount) public hasTokens(amount)  returns (bool) {
         _transfer(msg.sender, to, amount);
         return true;
     }
 
-     function getDegenBalance(address _owner) public view returns (uint256) {
+     function getDegenTokenBalance(address _owner) public view returns (uint256) {
         return super.balanceOf(_owner);
     }
 
@@ -42,7 +42,7 @@ contract DegenToken is ERC20, Ownable{
         return "Store: 1. Health, 2. Skins, 3. Emblems";
     }
 
-    function redeem(uint8 _Item) external payable returns (bool) {
+    function redeemToken(uint8 _Item) external payable returns (bool) {
         if (_Item == 1) {
             require(this.balanceOf(msg.sender) >= 50, "Not enough Degen Tokens to redeem");
             approve(msg.sender, 100);

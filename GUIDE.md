@@ -312,7 +312,7 @@ Points token deployed to <YOUR TOKEN ADDRESS>
 If you have set up your API key, we can verify the smart contract on Fuji by running the following command:
 
 ```bash
-$ npx hardhat verify <YOUR TOKEN ADDRESS> --network fuji
+$ c
 ```
 
 Now we can go to [https://testnet.snowtrace.io/](https://testnet.snowtrace.io/) and search for our smart contract, using the same address that we used before, and there it is our Degen Token, with a verified contract.
