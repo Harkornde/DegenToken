@@ -1,10 +1,10 @@
 # Project Title
 
-Simple overview of use/purpose.
+Erc20 gifting gaming contract
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This is an ERC20 token contract, It allows creation of tokens, where the contract owner only has the ability to mint and git any users, any user can transfer and burn the token
 
 ## Getting Started
 
@@ -14,9 +14,13 @@ An in-depth paragraph about your project and overview of use.
 * Any modifications needed to be made to files/folders
 
 ### Executing program
+- clone the project from github
+- cd "project director"
+- To deploy, run: npx hardhat run --network fuji .\scripts\deploy.js
+- To verify contract, run: npx hardhat verify "contract address" --network fuji
 
-* How to run the program
-* Step-by-step bullets
+
+For ease in executing the smart contract, the address can be copied and use in remix environment to interact with different functions in the contract
 ```
 code blocks for commands
 ```
@@ -32,10 +36,13 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Jubril Akande
+ex. @
+
+ex. Harkornde
+ex. [@Harkornde]([https://twitter.com/Harkornde])
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License
