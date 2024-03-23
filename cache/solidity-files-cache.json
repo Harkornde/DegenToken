@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/jaybee/Desktop/AvaxIntermFInalAccessment/DegenToken/contracts/DegenToken.sol": {
-      "lastModificationDate": 1710019889653,
-      "contentHash": "dd7201c97aec7c1bba28f8dfa3ed2b6b",
+      "lastModificationDate": 1710622346248,
+      "contentHash": "a1e0f938f883210f1e5e18b5daec7fa9",
       "sourceName": "contracts/DegenToken.sol",
       "solcConfig": {
         "version": "0.8.9",
